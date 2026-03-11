@@ -5,9 +5,9 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import ClinicInfo from "../components/ClinicInfo";
 import Doctors from "../components/Doctors";
-import ReviewsSection from "../components/ReviewsSection";
+import ReviewsSection from "../components/ReviewsSection"; 
 import Footer from "../components/Footer";
-import "../styles/global.css";
+import "../Styles/global.css";
 
 export default function IndexPage() {
   return (
