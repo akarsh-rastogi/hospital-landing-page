@@ -33,7 +33,7 @@ const Footer = () => (
       <a href="#"><FaTwitter /></a>
     </div>
 
-    <p className="footer-copy">©2023 - 011183</p>
+    <p className="footer-copy">©2023 - 011BQ</p>
 
   </footer>
 );

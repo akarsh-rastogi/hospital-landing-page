@@ -128,6 +128,10 @@ body {
   align-items: center;
   padding: 25px 115px;
   background: #f0f2f7;
+  margin-top: 80px;
+
+  /* 👇 Navbar ke niche space */
+  margin-top: 80px;   /* apni navbar ki height ke hisaab se adjust karo */
 }
 
 .hero-left {
@@ -190,6 +194,7 @@ body {
     flex-direction: column;       
     padding: 20px;               
     text-align: center;          
+    margin-top: 60px;   /* 👇 mobile navbar ke liye chhota gap */
   }
 
   .hero-left {
@@ -223,6 +228,7 @@ body {
     height: 200px;              
   }
 }
+
 
 /* ----------------services-section------------ */
 
