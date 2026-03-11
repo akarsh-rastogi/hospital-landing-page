@@ -4,4 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
  */
 
-// You can delete this file if you're not using it
+// Global CSS import
+import "./src/Styles/global.css"
+
+
+
+
+
