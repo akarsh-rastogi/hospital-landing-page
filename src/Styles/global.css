@@ -9,11 +9,10 @@ body {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;   /* ✅ logo left, hamburger right */
   align-items: center;
   padding: 25px 115px;
   background: #ffffff;
- 
   z-index: 1000;
 }
 
@@ -67,8 +66,13 @@ body {
 
 /* 📱 Mobile Responsive */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;             /* ✅ reduce padding */
+  }
+
   .hamburger {
-    display: block;
+    display: block;                 /* ✅ show hamburger */
+    margin-left: auto;              /* ✅ push to right */
   }
 
   .nav-right {
@@ -111,16 +115,10 @@ body {
   }
 }
 
-
 @keyframes slideDown {
   from { opacity: 0; transform: translateY(-15px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-.hero, .services, .clinic-section {
-  margin-top: 80px; 
-}
-
 
 /* ----------------hero-section-------------- */
 
@@ -437,7 +435,7 @@ body {
 
 @media (max-width: 768px) {
   .clinic-section {
-    padding: 40px 20px;
+    padding: 10px 20px;
   }
 
   .clinic-container {
@@ -489,7 +487,7 @@ body {
     width: 100%;
     max-width: 240px;              
     padding: 15px;
-    height: auto;
+    height: 150px;
   }
 
   .clinic-card img {
