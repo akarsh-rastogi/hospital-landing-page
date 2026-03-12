@@ -14,25 +14,27 @@
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  gap: 40px;                             
+  gap: 40px;               /* 👈 cards ke beech gap */
   max-width: 1000px;
-  margin: 0 auto;                      
-  align-items: stretch;                 
+  margin: 0 auto;          /* center align */
+  align-items: stretch;    
 }
-
+.slick-slide {
+  padding: 0 15px;   /* 👈 horizontal gap between slides */
+}
 .review-card {
   background: #ffffff;
-  padding: 30px 25px;
+  padding:  25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 320px;                     
+  min-height: 320px;       
   height: 100%;
   text-align: center;
-  width: 100%;                           
-  margin: 0;                             
+  width: 100%;
+  margin: 0;               /* grid gap handle karega */
 }
 
 .quote-mark {
@@ -48,9 +50,8 @@
   color: #333;
   margin-bottom: 20px;
   font-style: italic;
-  flex-grow: 1;                          
+  flex-grow: 1;            
 }
-
 
 .review-author {
   font-weight: bold;
@@ -70,8 +71,8 @@
   }
 
   .reviews-grid {
-    grid-template-columns: 1fr;        
-    gap: 20px;                           
+    grid-template-columns: 1fr;   /* 👈 single card per row */
+    gap: 20px;                    /* vertical spacing */
     max-width: 100%;
   }
 
@@ -82,8 +83,9 @@
 
   .review-card {
     padding: 20px;
-    min-height: 280px;                  
+    min-height: 280px;
     height: 100%;
+    margin: 0 10px;               /* 👈 thoda side margin mobile me */
   }
 
   .quote-mark {
@@ -94,11 +96,6 @@
     font-size: 14px;
   }
 
-  .review-photo {
-    width: 60px;
-    height: 60px;
-  }
-
   .review-author {
     font-size: 16px;
   }
@@ -107,3 +104,22 @@
     font-size: 13px;
   }
 }
+.slick-slide {
+  display: flex !important;   /* har slide flex banega */
+  height: auto !important;
+}
+
+.review-card {
+  flex: 1;                    /* card ko full height stretch karna */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px;          /* minimum height fix */
+  height: 100%;               /* equal height enforce */
+  margin: 0 0px;             /* gap between cards */
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+

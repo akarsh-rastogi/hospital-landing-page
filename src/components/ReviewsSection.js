@@ -22,24 +22,32 @@ const ReviewsSection = () => {
       });
   }, []);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 600,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true, 
-    arrows: true,    
-    responsive: [
-      {
-        breakpoint: 768, 
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  autoplay: true,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 768, // Tablet
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
       },
-    ],
-  };
+    },
+    {
+      breakpoint: 575, // 👈 Mobile screens ke liye
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
 
   return (
     <section className="reviews-section">
