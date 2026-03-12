@@ -71,8 +71,8 @@
   }
 
   .reviews-grid {
-    grid-template-columns: 1fr;   /* 👈 single card per row */
-    gap: 20px;                    /* vertical spacing */
+    grid-template-columns: 1fr;  
+    gap: 20px;                    
     max-width: 100%;
   }
 
@@ -81,12 +81,12 @@
     margin-bottom: 25px;
   }
 
-  .review-card {
+  /* .review-card {
     padding: 20px;
     min-height: 280px;
     height: 100%;
-    margin: 0 10px;               /* 👈 thoda side margin mobile me */
-  }
+    margin: 0 10px;              
+  } */
 
   .quote-mark {
     font-size: 24px;

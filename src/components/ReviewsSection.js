@@ -32,14 +32,14 @@ const settings = {
   arrows: true,
   responsive: [
     {
-      breakpoint: 768, // Tablet
+      breakpoint: 768, 
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
     {
-      breakpoint: 575, // 👈 Mobile screens ke liye
+      breakpoint: 575, 
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
