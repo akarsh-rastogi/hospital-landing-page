@@ -14,13 +14,13 @@
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  gap: 40px;               /* 👈 cards ke beech gap */
+  gap: 40px;              
   max-width: 1000px;
-  margin: 0 auto;          /* center align */
+  margin: 0 auto;          
   align-items: stretch;    
 }
 .slick-slide {
-  padding: 0 15px;   /* 👈 horizontal gap between slides */
+  padding: 0 15px;   
 }
 .review-card {
   background: #ffffff;
@@ -34,7 +34,7 @@
   height: 100%;
   text-align: center;
   width: 100%;
-  margin: 0;               /* grid gap handle karega */
+  margin: 0;               
 }
 
 .quote-mark {
@@ -81,12 +81,6 @@
     margin-bottom: 25px;
   }
 
-  /* .review-card {
-    padding: 20px;
-    min-height: 280px;
-    height: 100%;
-    margin: 0 10px;              
-  } */
 
   .quote-mark {
     font-size: 24px;
@@ -105,21 +99,23 @@
   }
 }
 .slick-slide {
-  display: flex !important;   /* har slide flex banega */
+  display: flex !important;   
   height: auto !important;
 }
 
 .review-card {
-  flex: 1;                    /* card ko full height stretch karna */
+  flex: 1;                    
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 320px;          /* minimum height fix */
-  height: 100%;               /* equal height enforce */
-  margin: 0 0px;             /* gap between cards */
+  min-height: 320px;          
+  height: 100%;               
+  margin: 0 0px;            
   background: #ffffff;
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  
 }
 
